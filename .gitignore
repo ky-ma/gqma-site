@@ -1,0 +1,27 @@
+# Secrets and environment
+.env
+.env.local
+.env.production
+config.local.js
+secrets/
+
+# Private docs
+docs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
