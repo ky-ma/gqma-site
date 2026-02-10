@@ -9,7 +9,7 @@
 window.GQMA_CONFIG = {
   // Contact info is loaded from config.local.js (gitignored)
   // to keep personal details out of the repo.
-  email: null,
+  email: 'kma@gqma.org',
   github: null,
   linkedin: null,
 };
