@@ -386,15 +386,7 @@
     </div>
   </footer>
 
-  <!-- config.local.js is gitignored and holds secrets (email, links) -->
-  <script src="config.local.js"></script>
-  <!-- config.js provides safe defaults for missing values -->
-  <script>
-    // Merge: config.local.js values take precedence over defaults
-    if (!window.GQMA_CONFIG) {
-      window.GQMA_CONFIG = { email: null, github: null, linkedin: null };
-    }
-  </script>
+  <script src="config.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
