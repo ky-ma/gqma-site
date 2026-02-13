@@ -156,10 +156,20 @@
   }
 
   // --- Init ---
-  document.addEventListener('DOMContentLoaded', function () {
+  function init() {
+    console.log('[init] Initializing...');
     initContact();
     initNav();
     initCanvas();
     initReveal();
-  });
+  }
+
+  // Run immediately if DOM is already loaded, otherwise wait for DOMContentLoaded
+  if (document.readyState === 'loading') {
+    console.log('[main.js] DOM still loading, waiting for DOMContentLoaded...');
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    console.log('[main.js] DOM already loaded, running init immediately');
+    init();
+  }
 })();
