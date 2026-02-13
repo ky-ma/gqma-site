@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Button Debug Test</title>
+  <style>
+    body { font-family: sans-serif; padding: 40px; background: #1a1a1a; color: #fff; }
+    #debug { background: #222; padding: 20px; margin: 20px 0; font-family: monospace; font-size: 12px; color: #0f0; }
+    .btn { display: inline-block; padding: 12px 24px; background: #e07a3a; color: #fff; text-decoration: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Email Button Debug Test</h1>
+  <p>Testing the contact email button functionality:</p>
+  
+  <a href="#" class="btn" id="contact-email" style="display:none;">Get in Touch</a>
+  
+  <div id="debug"></div>
+
+  <script src="config.js"></script>
+  <script>
+  (function() {
+    var log = document.getElementById('debug');
+    function addLog(msg) {
+      log.innerHTML += msg + '<br>';
+    }
+    
+    addLog('=== Email Button Debug ===');
+    addLog('1. config.js loaded');
+    addLog('2. GQMA_CONFIG: ' + JSON.stringify(window.GQMA_CONFIG));
+    addLog('3. GQMA_CONFIG.email: ' + window.GQMA_CONFIG.email);
+    addLog('4. Email type: ' + typeof window.GQMA_CONFIG.email);
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      addLog('5. DOMContentLoaded fired');
+      
+      try {
+        var cfg = window.GQMA_CONFIG || {};
+        addLog('6. cfg.email: ' + cfg.email);
+        
+        if (cfg.email) {
+          addLog('7. Email exists, looking for element...');
+          var el = document.getElementById('contact-email');
+          addLog('8. Element found: ' + (el ? 'YES' : 'NO'));
+          
+          if (el) {
+            addLog('9. Original href: ' + el.getAttribute('href'));
+            addLog('10. Original display: ' + el.style.display);
+            
+            el.setAttribute('href', 'mailto:' + cfg.email);
+            el.style.display = '';
+            
+            addLog('11. New href: ' + el.getAttribute('href'));
+            addLog('12. New display: ' + el.style.display);
+            addLog('13. Button should now be visible!');
+          }
+        } else {
+          addLog('7. Email is falsy!');
+        }
+      } catch (e) {
+        addLog('ERROR: ' + e.message);
+      }
+    });
+  })();
+  </script>
+</body>
+</html>
