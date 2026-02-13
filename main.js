@@ -7,13 +7,22 @@
 
   // --- Contact config ---
   function initContact() {
+    console.log('[initContact] Starting...');
     try {
       var cfg = window.GQMA_CONFIG || {};
+      console.log('[initContact] cfg:', cfg);
+      console.log('[initContact] cfg.email:', cfg.email);
+
       if (cfg.email) {
+        console.log('[initContact] Email exists, finding element...');
         var el = document.getElementById('contact-email');
+        console.log('[initContact] Element found:', !!el);
+
         if (el) {
+          console.log('[initContact] Setting href and display');
           el.setAttribute('href', 'mail' + 'to:' + cfg.email);
           el.style.display = '';
+          console.log('[initContact] Done - href:', el.getAttribute('href'), 'display:', el.style.display);
         }
       }
       if (cfg.github) {
@@ -24,6 +33,7 @@
         }
       }
     } catch (e) {
+      console.error('[initContact] ERROR:', e);
       // Cloudflare email obfuscation can interfere — fail gracefully
     }
   }
