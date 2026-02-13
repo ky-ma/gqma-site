@@ -7,16 +7,24 @@
 
   // --- Contact config ---
   function initContact() {
-    var cfg = window.GQMA_CONFIG || {};
-    if (cfg.email) {
-      var el = document.getElementById('contact-email');
-      el.href = 'mailto:' + cfg.email;
-      el.style.display = '';
-    }
-    if (cfg.github) {
-      var el2 = document.getElementById('contact-github');
-      el2.href = cfg.github;
-      el2.style.display = '';
+    try {
+      var cfg = window.GQMA_CONFIG || {};
+      if (cfg.email) {
+        var el = document.getElementById('contact-email');
+        if (el) {
+          el.setAttribute('href', 'mail' + 'to:' + cfg.email);
+          el.style.display = '';
+        }
+      }
+      if (cfg.github) {
+        var el2 = document.getElementById('contact-github');
+        if (el2) {
+          el2.href = cfg.github;
+          el2.style.display = '';
+        }
+      }
+    } catch (e) {
+      // Cloudflare email obfuscation can interfere — fail gracefully
     }
   }
 

@@ -9,7 +9,8 @@
 window.GQMA_CONFIG = {
   // Contact info is loaded from config.local.js (gitignored)
   // to keep personal details out of the repo.
-  email: 'kma@gqma.org',
+  // Encoded to prevent Cloudflare email obfuscation from mangling the value
+  email: ['kma', 'gqma.org'].join('@'),
   github: null,
   linkedin: null,
 };
