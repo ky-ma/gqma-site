@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GQMA — Ky Ma</title>
-  <meta name="description" content="Automation and AI leadership that ships. 15+ years leading infrastructure, AI, and platform engineering at scale. Helping companies turn ambition into production systems.">
+  <title>GQMA — Your Personal Team</title>
+  <meta name="description" content="We build personal teams that support you in every aspect of your life goals. Stop juggling apps. Start getting things done.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,11 +17,10 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">GQMA</a>
       <div class="nav-links">
-        <a href="#philosophy">Thinking</a>
-        <a href="#background">Background</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Connect</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#get-started">Get Started</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -36,338 +35,246 @@
     </div>
     <div class="hero-content">
       <h1 class="hero-title">
-        Automation, AI & Systems Architecture<br>
-        <span class="hero-accent">leadership that ships.</span>
+        Stop juggling. Start living.<br>
+        <span class="hero-accent">Your personal team is here.</span>
       </h1>
       <p class="hero-sub">
-        15+ years designing secure, scalable systems and leading AI-driven automation
-        at scale. From architecting infrastructure for 800+ engineers to building
-        production AI agents that eliminate manual work — I help companies turn
-        complex problems into reliable, secure, running systems.
+        We build personal teams that work together behind the scenes —
+        finding deals, planning trips, crunching data, and keeping your
+        life organized. You focus on what matters. We handle the rest.
       </p>
       <div class="hero-cta">
-        <a href="#philosophy" class="btn btn-primary">How I Think</a>
-        <a href="#work" class="btn btn-outline">Recent Work</a>
+        <a href="#get-started" class="btn btn-primary">Get Your Team</a>
+        <a href="#what-we-do" class="btn btn-outline">See What We Do</a>
       </div>
     </div>
   </section>
 
-  <!-- Philosophy -->
-  <section class="section" id="philosophy">
+  <!-- What We Do -->
+  <section class="section" id="what-we-do">
     <div class="container">
-      <div class="section-label">Philosophy</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>I design secure systems, automate what slows companies down, and build the AI that accelerates what matters.</h2>
-          <p>
-            I've managed 700+ compute nodes and 400+ AI accelerators at Tenstorrent, built data
-            pipelines that saved manufacturers millions at Jabil, and led distributed engineering
-            teams across continents. I know what it takes to transform an organization's
-            infrastructure — because I've done it, repeatedly, at scale.
-          </p>
-          <p>
-            At Tenstorrent, I pioneered Agentic AI solutions that cut support ticket volume by 70%
-            and saved teams hours of manual work daily. I automated provisioning for 600+ servers,
-            reduced hardware deployment from weeks to hours, and transitioned a reactive IT
-            organization into a proactive Platform Engineering team serving 800+ engineers.
-          </p>
-          <p>
-            Before that, I was a Data Architect at Jabil — building near real-time analytics
-            pipelines for global factory operations, converting monolithic systems to microservices,
-            and leading zero-data-loss migrations. That foundation in data architecture and
-            operational automation shapes everything I build today.
-          </p>
-          <p>
-            Since going independent, I've shipped over twenty production systems in three months —
-            proving I can move fast without cutting corners. I pick the right tool for the job
-            and own every layer from the server rack to the user interface.
-          </p>
-        </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-            </div>
-            <h3>See what's next</h3>
-            <p>Pioneered Agentic AI at Tenstorrent before it was a buzzword — reducing support tickets 70% with MCP-based agents across Slack.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3>Ship fast, ship right</h3>
-            <p>Automated provisioning for 600+ servers. Reduced hardware deployment from weeks to hours. Production-grade is the only grade.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-            </div>
-            <h3>Secure by design</h3>
-            <p>Vault-managed secrets, encrypted document storage, certificate-based auth, Fernet encryption, zero-trust networking. Security is architecture, not an afterthought.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            </div>
-            <h3>Build teams that grow</h3>
-            <p>Grew and mentored engineering teams at every stop. Turned underperformers into owners. Transformed IT into Platform Engineering.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Background -->
-  <section class="section section-dark" id="background">
-    <div class="container">
-      <div class="section-label">Background</div>
-      <h2 class="section-title">Where I've been.</h2>
-      <p class="section-intro">I've led infrastructure and engineering teams across AI hardware, HPC, manufacturing, IoT, and cloud — always at the intersection of architecture and execution.</p>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2023 — 2025</div>
-            <h3>Sr Manager, AI Infrastructure & HPC</h3>
-            <div class="timeline-company">Tenstorrent</div>
-            <p>
-              Led platform engineering for 800+ engineers across HPC and AI accelerator infrastructure.
-              Managed 700+ compute nodes and 400+ Tenstorrent accelerators across two datacenters.
-              Pioneered Agentic AI solutions that cut support volume 70%. Led a Tiger Team of 20+
-              engineers to resolve critical hardware failures blocking product release. Transitioned the
-              team from reactive IT to proactive Platform Engineering.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2023</div>
-            <h3>DevOps Manager</h3>
-            <div class="timeline-company">Current Lighting</div>
-            <p>
-              Managed DevOps, SRE, and SaaS operations across AWS, Azure, on-prem, edge compute,
-              and IoT. Architected CI/CD pipelines spanning iOS, Android, Linux, and NUC deployments.
-              Maintained and scaled DataStax, Spark, and Cassandra clusters.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2022 — 2023</div>
-            <h3>DevOps Architect / Manager</h3>
-            <div class="timeline-company">Spirent Communications</div>
-            <p>
-              Transformed a distributed team of 8 engineers across the US and overseas.
-              Architected end-to-end CI/CD including multi-cloud and air-gapped deployments.
-              Defined the pipeline roadmap for Kubernetes and legacy VM environments.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2018 — 2022</div>
-            <h3>Data Architect / DevOps Architect</h3>
-            <div class="timeline-company">Jabil</div>
-            <p>
-              Built near real-time analytics pipelines for global factory operations using Kubernetes,
-              Kafka, Elasticsearch, and Ansible. Converted a monolithic test framework to microservices.
-              Led a zero-data-loss platform migration across 8 teams. Saved the business millions
-              through automated reporting and manufacturing metrics.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Earlier</div>
-            <h3>Software & Infrastructure Architect</h3>
-            <div class="timeline-company">Flex International &middot; HP TippingPoint</div>
-            <p>
-              Software architecture and infrastructure engineering at scale.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Education</div>
-            <h3>B.S. Electrical Engineering</h3>
-            <div class="timeline-company">University of Texas at Dallas</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Work -->
-  <section class="section" id="work">
-    <div class="container">
-      <div class="section-label">What I'm Building Now</div>
-      <h2 class="section-title">Independent work, production architecture.</h2>
-      <p class="section-intro">Since leaving Tenstorrent, I've been shipping — applying everything I've learned about systems design, security, and AI to build tools I believe in. Each one started with a real problem and was built with the same rigor I'd bring to enterprise infrastructure.</p>
-
-      <div class="work-grid">
-
-        <div class="work-card work-featured">
-          <div class="work-category">AI Agent Platform</div>
-          <h3>Agent Ma</h3>
-          <p>
-            Build and manage a team of AI agents that search marketplaces, plan routes,
-            test code, and coordinate as a team. Access from your browser, Telegram, or API.
-            Each agent comes pre-configured for their role, shares a workspace, and gets
-            better with every interaction.
-          </p>
-          <a href="https://agent.gqma.org" class="btn btn-outline" style="margin-top: 16px;">Learn More &rarr;</a>
-        </div>
-
-        <div class="work-card work-featured">
-          <div class="work-category">AI + Search &middot; Systems Architecture</div>
-          <h3>Scout</h3>
-          <p>
-            A federated search engine across 25+ marketplaces — designed as a plugin architecture
-            where each provider is an isolated adapter with its own Fernet-encrypted config.
-            AI classifies queries into intent, a 4-layer relevance scoring engine ranks results
-            in real-time via SSE streaming, and Prometheus + OpenTelemetry trace every request
-            from ingestion to render. One query, dozens of sources, full observability.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">Agent Platform &middot; Secure Gateway</div>
-          <h3>Agent Ma</h3>
-          <p>
-            A Kubernetes-native gateway between humans and AI agents — multi-auth (session tokens,
-            API keys, Telegram integration), RabbitMQ quorum queues for reliable task delivery,
-            PTY-based live terminal streaming, and end-to-end OpenTelemetry tracing. Every agent
-            interaction is auditable, rate-limited, and tenant-isolated.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">ML Inference &middot; Multi-Tenant SaaS</div>
-          <h3>Polymorphic</h3>
-          <p>
-            A multi-tenant ML inference platform with namespace-isolated deployments, HPA-driven
-            GPU scaling, and scoped RBAC. JWT + API key auth, security headers middleware, rate
-            limiting per tenant, S3 model storage, Stripe billing. Users deploy models through a
-            simple API — the security and scaling happen automatically.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">Real-Time Systems</div>
-          <h3>Jam Session</h3>
-          <p>
-            Musicians shouldn't need to be in the same room. A low-latency networked MIDI system
-            in C, speaking raw UDP with RTT measurement, cross-platform between Windows and Linux.
-            Plug in your keyboard, connect to a session, and play together.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">Business Platform &middot; Encrypted by Default</div>
-          <h3>AgentHub</h3>
-          <p>
-            Insurance sales management built on AES-256-GCM document encryption, brute-force
-            protection, and role-based access (admin / manager / seller). Concurrent bulk import
-            via worker pools, Claude-powered PDF and spreadsheet extraction, multi-vendor quote
-            comparison. Every customer document is encrypted at rest — not optional, not configurable.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">AI + Privacy-First Design</div>
-          <h3>Job Hunter</h3>
-          <p>
-            Privacy-first job matching — no credentials stored, no data retained. Claude tailors
-            resumes per role, sentence-transformers score semantic fit, Playwright automates
-            applications. Multi-service architecture with Celery task queues, each service
-            scoped to a single responsibility. Your data stays yours.
-          </p>
-        </div>
-
-      </div>
-
-      <p class="work-more">
-        Plus: SRE infrastructure agents, Rust file-sync CLI, GPU-accelerated background removal,
-        document scanning pipeline, LLM caching proxy, self-hosted Excalidraw, Docker Compose to Helm converter,
-        Ansible playbooks for Dell PowerEdge servers, bare-metal orchestration via MAAS, and more.
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">A team for every part of your life.</h2>
+      <p class="section-intro">
+        Tired of switching between ten different apps just to plan a weekend?
+        Your team handles it all — and they actually talk to each other.
       </p>
+
+      <div class="capabilities-grid">
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h3>Find the best deal on anything</h3>
+          <p>
+            Cars, electronics, gear, furniture — your team searches dozens of
+            sources at once and surfaces the best options so you don't have to
+            spend hours comparison shopping.
+          </p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <h3>Plan trips you'll actually enjoy</h3>
+          <p>
+            Routes, stops, weather, campgrounds, hotels — your team maps out
+            every detail. Tell them where you want to go and they'll figure out
+            the best way to get there.
+          </p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3>Make sense of your data</h3>
+          <p>
+            Got a messy spreadsheet? A pile of receipts? Your team can process,
+            organize, and pull insights from your data without you lifting a finger.
+          </p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3>An assistant that remembers you</h3>
+          <p>
+            Your preferences, your habits, the way you like things done — your
+            team learns what matters to you and gets better over time. No more
+            repeating yourself.
+          </p>
+        </div>
+
+        <div class="cap-card cap-card-wide">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3>A team that works together — for you</h3>
+          <p>
+            This isn't a collection of disconnected tools. Your team members
+            collaborate, share context, and hand off work to each other seamlessly.
+            The deal finder talks to the trip planner. The data processor feeds the
+            assistant. It all just works — because they're a team, not a toolbox.
+          </p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Approach -->
-  <section class="section section-dark" id="approach">
+  <!-- How It Works -->
+  <section class="section section-dark" id="how-it-works">
     <div class="container">
-      <div class="section-label">Approach</div>
-      <h2 class="section-title">How I work.</h2>
-      <div class="approach-grid">
-        <div class="approach-card">
-          <div class="approach-num">01</div>
-          <h3>Architecture-first thinking</h3>
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Three steps. That's it.</h2>
+      <p class="section-intro">
+        No complicated setup. No learning curve. Just tell your team what you need.
+      </p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Tell us what you need</h3>
           <p>
-            Every system I build starts with architecture — the right patterns, the right boundaries,
-            the right failure modes. I've designed platforms spanning 700+ compute nodes across
-            datacenters, and I run my own infrastructure now: bare-metal servers, Kubernetes, Helm,
-            Harbor, Vault, Prometheus. I think in systems, not features.
+            "Find me a used truck under $15k." "Plan a road trip from Austin to
+            Big Bend with campgrounds." "Organize this spreadsheet." Just say it
+            in plain language.
           </p>
         </div>
-        <div class="approach-card">
-          <div class="approach-num">02</div>
-          <h3>Right tool, right job</h3>
+        <div class="step-connector">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Your team gets to work</h3>
           <p>
-            Rust when correctness and performance matter. Go for concurrent services. Python for
-            rapid iteration and ML. C when you need to talk directly to hardware. TypeScript for
-            rich UIs. I don't have a favorite language — I have favorite outcomes.
+            Behind the scenes, your team coordinates — searching, comparing,
+            planning, and organizing. They share what they find with each other
+            so nothing falls through the cracks.
           </p>
         </div>
-        <div class="approach-card">
-          <div class="approach-num">03</div>
-          <h3>AI as leverage, not theater</h3>
-          <p>
-            At Tenstorrent, I built MCP agents that cut support tickets 70% and saved a team
-            4-5 hours daily on manual query resolution. I integrate AI where it creates real value —
-            not to add a chatbot to everything, but to solve problems that were previously impractical.
-          </p>
+        <div class="step-connector">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </div>
-        <div class="approach-card">
-          <div class="approach-num">04</div>
-          <h3>Security as architecture</h3>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Get results, not noise</h3>
           <p>
-            Security isn't a checklist you run at the end — it's how you design the system from day one.
-            Vault for secrets management, certificate-based authentication, encrypted storage at rest,
-            zero-trust networking, automated credential rotation. I've managed infrastructure serving
-            800+ engineers where a breach would halt product development. That shapes how I build everything.
+            You get clear, organized answers — not a wall of links. The best
+            deals ranked. The trip mapped out. The data summarized. Ready to
+            act on, not wade through.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
+  <!-- FAQ -->
+  <section class="section" id="faq">
     <div class="container">
-      <div class="contact-inner">
-        <div class="section-label">Connect</div>
-        <h2 class="section-title">Ready to move faster?</h2>
-        <p class="contact-text">
-          If your organization needs automation leadership, AI strategy, or someone who can
-          take infrastructure from chaos to platform — I'd like to hear about it. I bring
-          15+ years of hands-on experience leading teams and shipping systems at companies
-          like Tenstorrent, Jabil, Spirent, and HP. Let's talk.
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Questions? We've got answers.</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What kinds of things can my team help with?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your team can search for deals across dozens of marketplaces, plan
+              road trips with stops and weather, process spreadsheets and documents,
+              track prices over time, find events and restaurants, and much more. If
+              it involves research, planning, or organizing — your team can probably
+              handle it.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How is this different from just using Google?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Google gives you a list of links. Your team gives you answers. When
+              you search for a used truck, we don't show you ten websites — we show
+              you the best trucks, ranked, with prices compared across multiple
+              sources. And your team remembers what you've looked at before, so
+              results get better over time.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What does "a team that works together" actually mean?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Most tools work in isolation — your calendar doesn't talk to your
+              shopping app. Our team members share context. When you're planning a
+              camping trip, the route planner checks the weather, the deal finder
+              looks for gear, and the assistant remembers you prefer dispersed
+              camping. They coordinate so you don't have to.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Does my team learn my preferences?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. Over time, your team gets better at understanding what you like.
+              If you always search for trucks with low mileage, or prefer campgrounds
+              with hookups, or like window seats on flights — your team picks up on
+              that and adjusts. You spend less time specifying and more time deciding.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I talk to my team?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Through your browser, through messaging apps, or through our app.
+              Just type what you need in plain language — no special commands, no
+              learning curve. If you can text a friend, you can talk to your team.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started -->
+  <section class="section section-dark" id="get-started">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-label">Get Started</div>
+        <h2 class="section-title">Ready to meet your team?</h2>
+        <p class="cta-text">
+          Life's too short to spend it comparison shopping, planning logistics,
+          and wrestling with spreadsheets. Let your team handle it.
         </p>
-        <div class="contact-links">
+        <div class="cta-buttons">
           <a href="#" class="btn btn-primary contact-email" id="contact-email" style="display:none;">Get in Touch</a>
+          <a href="https://agent.gqma.org" class="btn btn-primary">Try It Now</a>
         </div>
         <noscript>
           <p class="contact-noscript">Enable JavaScript to see contact details.</p>

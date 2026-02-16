@@ -16,19 +16,12 @@
           el.style.display = '';
         }
       }
-      if (cfg.github) {
-        var el2 = document.getElementById('contact-github');
-        if (el2) {
-          el2.href = cfg.github;
-          el2.style.display = '';
-        }
-      }
     } catch (e) {
-      // Cloudflare email obfuscation can interfere — fail gracefully
+      // Fail gracefully
     }
   }
 
-  // --- Navigation scroll ---
+  // --- Navigation scroll + mobile toggle ---
   function initNav() {
     var nav = document.getElementById('nav');
     var toggle = document.getElementById('nav-toggle');
@@ -129,6 +122,26 @@
     draw();
   }
 
+  // --- FAQ accordion ---
+  function initFAQ() {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        // Close all others
+        items.forEach(function (other) { other.classList.remove('open'); });
+        // Toggle current
+        if (!isOpen) item.classList.add('open');
+        // Update aria
+        items.forEach(function (it) {
+          var b = it.querySelector('.faq-question');
+          b.setAttribute('aria-expanded', it.classList.contains('open'));
+        });
+      });
+    });
+  }
+
   // --- Scroll reveal ---
   function initReveal() {
     var observer = new IntersectionObserver(function (entries) {
@@ -140,7 +153,7 @@
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.fade-in, .work-card, .approach-card, .highlight-card').forEach(function (el) {
+    document.querySelectorAll('.fade-in, .cap-card, .step-card, .faq-item').forEach(function (el) {
       observer.observe(el);
     });
   }
@@ -150,10 +163,10 @@
     initContact();
     initNav();
     initCanvas();
+    initFAQ();
     initReveal();
   }
 
-  // Run immediately if DOM is already loaded, otherwise wait for DOMContentLoaded
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
