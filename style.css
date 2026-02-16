@@ -151,6 +151,7 @@ a:hover { color: #f5a623; }
   font-size: 1.1rem; color: var(--text-dim); line-height: 1.7;
   max-width: 580px; margin-bottom: 56px;
 }
+.section-intro strong { color: var(--text); }
 
 /* --- Capabilities / What We Do --- */
 .capabilities-grid {
