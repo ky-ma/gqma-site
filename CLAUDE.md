@@ -6,9 +6,8 @@
 - Feature branches only (feat/xxx, fix/xxx). Never commit directly to main/master.
 
 ## Domain Architecture
-- **agent.gqma.org** = Agent MA platform (agent-ma repo). Marketing/product content goes HERE.
-- **www.gqma.org** = Ky's personal portfolio (this repo, CF Pages). Do NOT put product content here.
-- **gqma.org** → 301 redirect → www.gqma.org (www is canonical)
+- **gqma.org / www.gqma.org** = Agent MA product site (this repo, CF Pages)
+- **agent.gqma.org** = Agent MA platform app (agent-ma repo)
 
 ## Tmux Messaging Format
 ```
