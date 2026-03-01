@@ -288,6 +288,26 @@ a:hover { color: #a5b4fc; }
   border-top: 1px solid var(--border); padding-top: 32px;
 }
 
+/* --- Feature Grid (What's New) --- */
+.feature-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.feature-item {
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition);
+}
+.feature-item:hover { border-color: var(--accent); }
+.feature-item strong {
+  display: block; font-size: 0.9rem; font-weight: 600;
+  margin-bottom: 4px; color: var(--text);
+}
+.feature-item span {
+  font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;
+}
+
 /* --- Approach --- */
 .approach-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;
@@ -352,6 +372,7 @@ a:hover { color: #a5b4fc; }
   .approach-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  .feature-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .nav-toggle { display: block; }
   .nav-links.open {
