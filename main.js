@@ -140,7 +140,7 @@
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.fade-in, .work-card, .approach-card, .highlight-card').forEach(function (el) {
+    document.querySelectorAll('.fade-in, .work-card, .approach-card, .highlight-card, .platform-card, .enterprise-card, .stat-card, .mapping-item').forEach(function (el) {
       observer.observe(el);
     });
   }

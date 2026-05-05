@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GQMA — Ky Ma | AI Architecture &amp; Agent Systems</title>
-  <meta name="description" content="AI architecture and agent systems built on 15+ years of infrastructure at scale. From managing 700+ compute nodes to building production AI agent teams — I bring hardware rigor to intelligent systems.">
+  <title>Agent MA — AI Agent Workforce Platform</title>
+  <meta name="description" content="Deploy AI agent teams that coordinate, self-heal, and ship real work. Multi-agent orchestration with enterprise security, real-time streaming, and production-grade infrastructure. Proven with 30+ agents shipping code daily.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +15,13 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">GQMA</a>
+      <a href="#" class="nav-logo">Agent MA</a>
       <div class="nav-links">
-        <a href="#philosophy">Thinking</a>
-        <a href="#background">Background</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Connect</a>
+        <a href="#platform">Platform</a>
+        <a href="#enterprise">Enterprise</a>
+        <a href="#proof">In Production</a>
+        <a href="#background">Team</a>
+        <a href="#contact">Contact</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -36,82 +36,250 @@
     </div>
     <div class="hero-content">
       <h1 class="hero-title">
-        AI Architecture &amp; Agent Systems<br>
-        <span class="hero-accent">built on real infrastructure.</span>
+        AI Agent Workforce Platform<br>
+        <span class="hero-accent">Not a chatbot. A company.</span>
       </h1>
       <p class="hero-sub">
-        I design AI agent systems that coordinate, learn, and ship real work.
-        Grounded in 15+ years of hardware infrastructure, HPC, and platform engineering
-        at scale — from 700+ compute nodes to production agent teams that operate
-        like trained employees.
+        Deploy dev teams, ops teams, and support teams as AI agents.
+        They coordinate, self-heal, and ship real work — orchestrated on
+        production infrastructure you can trust.
       </p>
       <div class="hero-cta">
-        <a href="#philosophy" class="btn btn-primary">How I Think</a>
-        <a href="#work" class="btn btn-outline">Recent Work</a>
+        <a href="#platform" class="btn btn-primary">See the Platform</a>
+        <a href="#proof" class="btn btn-outline">30+ Agents in Production &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- Philosophy -->
-  <section class="section" id="philosophy">
+  <!-- Platform -->
+  <section class="section" id="platform">
     <div class="container">
-      <div class="section-label">Philosophy</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>I architect AI agent systems grounded in real infrastructure — from bare metal to coordinated teams of agents that ship.</h2>
+      <div class="section-label">Platform</div>
+      <h2 class="section-title">Everything you need to run AI agent teams.</h2>
+      <p class="section-intro">Agent MA isn't a wrapper around an LLM. It's a workforce platform — agent lifecycle management, multi-agent coordination, persistent memory, and enterprise security built into the infrastructure layer.</p>
+
+      <div class="platform-grid">
+
+        <div class="platform-card platform-card-wide">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3>Multi-Agent Team Orchestration</h3>
+          <p>Deploy entire teams of AI agents — coordinators, developers, architects, QA, SRE, support. Each agent has a defined role, persistent memory, and communication channels. They coordinate through a production message bus, not API polling.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+          <h3>Self-Healing Agents</h3>
+          <p>Crashloop recovery, hung process detection, orphan cleanup, and a reconciler that syncs desired state every 60 seconds. Agents recover before you notice anything happened.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>Smart Context</h3>
+          <p>Persistent memory across sessions — fragments, instincts, and persona libraries that make agents smarter over time. Token-efficient context injection so agents remember without burning your budget.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Real-Time Streaming</h3>
+          <p>SSE streaming for live agent responses. Users see thinking token-by-token, not batch results minutes later. Telegram, PWA, and API — all channels, same real-time bus.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>MCP Tool Integration</h3>
+          <p>Platform-managed tool servers give agents real-world capabilities — Google Calendar, Gmail, Contacts, LinkedIn, marketplace search across 25+ providers. Agents don't just think, they act.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Cost Tracking &amp; Budget Enforcement</h3>
+          <p>Per-call token tracking — prompt, completion, thinking, and cache tokens separately. Cost attribution per agent, per user, per org. Session caps and circuit breakers prevent runaway spend.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h3>Multi-Channel Delivery</h3>
+          <p>PWA with real-time chat. Telegram with bot integration, group support, and @agent routing. REST API for programmatic access. All channels route through the same messaging bus with guaranteed delivery.</p>
+        </div>
+
+        <div class="platform-card">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+          </div>
+          <h3>Multi-LLM Provider Gateway</h3>
+          <p>Claude, Gemini, OpenAI, Ollama — DB-driven failover chains with rate-limit-aware routing. BYOS (Bring Your Own Subscription) for API keys. Automatic provider switching when one hits limits.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise -->
+  <section class="section section-dark" id="enterprise">
+    <div class="container">
+      <div class="section-label">Enterprise</div>
+      <h2 class="section-title">Built for organizations, not individuals.</h2>
+      <p class="section-intro">Agent MA treats organizations as the fundamental unit. Every agent, user, credential, and conversation is scoped to an org with complete isolation.</p>
+
+      <div class="enterprise-grid">
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">01</div>
+          <h3>Org-Level Isolation</h3>
           <p>
-            I'm building Agent MA — an AI agent platform where agents have layered personas,
-            measurable competency levels, and defined roles. They coordinate as a team,
-            learn from every interaction, and get better over time. The platform is built
-            by the same agent team it's designed to sell — proof of concept and product in one.
-          </p>
-          <p>
-            At Tenstorrent, I pioneered Agentic AI before it was a category — building
-            MCP-based agents that cut support ticket volume by 70% and saved teams hours
-            of manual work daily. I managed 700+ compute nodes and 400+ AI accelerators,
-            automated provisioning for 600+ servers, and transitioned a reactive IT
-            organization into a proactive Platform Engineering team serving 800+ engineers.
-          </p>
-          <p>
-            Before that, I was a Data Architect at Jabil — building near real-time analytics
-            pipelines for global factory operations, converting monolithic systems to microservices,
-            and leading zero-data-loss migrations. That foundation in data architecture, hardware
-            infrastructure, and operational automation shapes every AI system I build today.
-          </p>
-          <p>
-            Since going independent, I've shipped over twenty production systems in three months —
-            from AI agent platforms to federated search engines to bare-metal orchestration.
-            I own every layer from the server rack to the user interface.
+            Each organization gets its own Kubernetes namespace with dedicated resource quotas.
+            Agents, users, credentials, and conversations are completely isolated between orgs.
+            One org's data never touches another's compute or storage.
           </p>
         </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-            </div>
-            <h3>AI agents that work as teams</h3>
-            <p>Building coordinated multi-agent systems with layered personas, role-based access, and competency levels that improve with use.</p>
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">02</div>
+          <h3>Per-User Credential Management</h3>
+          <p>
+            Every user's Google, LinkedIn, and LLM credentials are managed independently.
+            Full OAuth PKCE flows, automatic token refresh, 5-tier credential state machine,
+            and rate-limit-aware rebalancing across credential pools. No shared keys.
+          </p>
+        </div>
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">03</div>
+          <h3>Vault-Managed Secrets</h3>
+          <p>
+            Zero hardcoded credentials — anywhere. All secrets injected via HashiCorp Vault
+            with Agent Injector. Admin token hierarchy (user / admin / platform) with different
+            scopes and trust levels. Encryption at rest and in transit.
+          </p>
+        </div>
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">04</div>
+          <h3>Role-Based Access Control</h3>
+          <p>
+            Three-tier access: superadmin (platform-wide), admin (org-scoped), user (self-scoped).
+            Service level gating controls who can spawn agents and what resources they can consume.
+            SOC 2 append-only audit trail for every action.
+          </p>
+        </div>
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">05</div>
+          <h3>Agent Lifecycle Management</h3>
+          <p>
+            Spawn, configure, hot-reload, rolling upgrade, and teardown — all managed.
+            Per-agent Kubernetes pods with persistent storage. Control queues for pause,
+            resume, restart, and config reload without pod restarts.
+          </p>
+        </div>
+
+        <div class="enterprise-card">
+          <div class="enterprise-num">06</div>
+          <h3>Production Messaging Bus</h3>
+          <p>
+            RabbitMQ cluster with per-agent queues, topic exchange for pub/sub, and
+            durable quorum queues with guaranteed delivery. Cross-agent messaging,
+            group coordination, and lifecycle commands — all on the same bus.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section class="section" id="proof">
+    <div class="container">
+      <div class="section-label">In Production</div>
+      <h2 class="section-title">30+ agents. Shipping code. Every day.</h2>
+      <p class="section-intro">This isn't a roadmap. It's running right now — a multi-agent software company operating on a single laptop, proving the model that Agent MA productizes for any organization.</p>
+
+      <div class="proof-layout">
+        <div class="proof-text">
+          <p>
+            On one machine, 30+ AI agents run with defined roles — coordinator, engine dev,
+            routing dev, platform dev, QA, architect, SRE, infrastructure, marketing, UX,
+            support. The coordinator dispatches work. Developers submit PRs. Architects review.
+            QA tests. Infrastructure deploys.
+          </p>
+          <p>
+            Real work ships daily — production code, bug fixes, spec documents, infrastructure
+            changes, PR reviews. Each agent maintains persistent context, learned behaviors,
+            and role-specific memory. The human sets direction. Agents handle execution.
+          </p>
+          <p>
+            Agent MA exists to make this available to any organization — replacing local
+            processes with Kubernetes pods, ad-hoc messaging with RabbitMQ, local files with
+            managed storage, and a single machine with a multi-tenant platform.
+          </p>
+        </div>
+
+        <div class="proof-stats">
+          <div class="stat-card">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Active AI Agents</div>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3>Ship fast, ship right</h3>
-            <p>20+ production systems in three months — agent platforms, search engines, infrastructure tooling. Production-grade is the only grade.</p>
+          <div class="stat-card">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Defined Roles</div>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-            </div>
-            <h3>Secure by design</h3>
-            <p>Vault-managed secrets, encrypted document storage, certificate-based auth, Fernet encryption, zero-trust networking. Security is architecture, not an afterthought.</p>
+          <div class="stat-card">
+            <div class="stat-number">Daily</div>
+            <div class="stat-label">Production Deploys</div>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            </div>
-            <h3>Build teams — human and AI</h3>
-            <p>Led engineering teams at every stop, from 8-person squads to 800-engineer platforms. Now architecting AI agent teams with the same rigor.</p>
+          <div class="stat-card">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Systems Shipped</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proof-mapping">
+        <h3>From Laptop to Platform</h3>
+        <div class="mapping-grid">
+          <div class="mapping-item">
+            <div class="mapping-from">tmux windows</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">Kubernetes pods with isolated compute &amp; storage</div>
+          </div>
+          <div class="mapping-item">
+            <div class="mapping-from">tmux messages</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">RabbitMQ with durable, guaranteed delivery</div>
+          </div>
+          <div class="mapping-item">
+            <div class="mapping-from">Local memory files</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">Smart Context — DB-driven, versioned, token-efficient</div>
+          </div>
+          <div class="mapping-item">
+            <div class="mapping-from">Manual crash recovery</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">Self-healing with auto-restart &amp; reconciler</div>
+          </div>
+          <div class="mapping-item">
+            <div class="mapping-from">Env var API keys</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">Vault-managed credential pool with BYOS &amp; failover</div>
+          </div>
+          <div class="mapping-item">
+            <div class="mapping-from">One user, one machine</div>
+            <div class="mapping-arrow">&rarr;</div>
+            <div class="mapping-to">Multi-tenant orgs with isolation, roles &amp; quotas</div>
           </div>
         </div>
       </div>
@@ -121,9 +289,9 @@
   <!-- Background -->
   <section class="section section-dark" id="background">
     <div class="container">
-      <div class="section-label">Background</div>
-      <h2 class="section-title">Where I've been.</h2>
-      <p class="section-intro">From hardware infrastructure and HPC to AI agent architecture — always at the intersection of systems design and execution.</p>
+      <div class="section-label">Who Built This</div>
+      <h2 class="section-title">15+ years from bare metal to AI agents.</h2>
+      <p class="section-intro">Agent MA is built by someone who's operated 700+ compute nodes across HPC and AI training clusters, led platform engineering for 800+ engineers, and pioneered agentic AI before it was a category.</p>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -133,10 +301,9 @@
             <h3>Founder &amp; AI Platform Architect</h3>
             <div class="timeline-company">GQMA &middot; Agent MA</div>
             <p>
-              Designing and building Agent MA — an AI agent platform with layered persona assembly,
-              competency-based skill levels, role-enforced access control, and coordinated multi-agent
-              teams. Running production infrastructure on bare metal: Kubernetes, Helm, Harbor, Vault,
-              Prometheus. 20+ systems shipped in three months.
+              Designing and building Agent MA — running production infrastructure on bare metal:
+              Kubernetes, Helm, Harbor, Vault, Prometheus. 20+ systems shipped in three months.
+              The platform is built by the same agent team it's designed to sell.
             </p>
           </div>
         </div>
@@ -145,14 +312,15 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-date">2023 — 2025</div>
-            <h3>Sr Manager, AI Infrastructure &amp; HPC</h3>
+            <h3>Sr Manager, HPC &amp; AI Cluster Infrastructure</h3>
             <div class="timeline-company">Tenstorrent</div>
             <p>
-              Pioneered Agentic AI solutions that cut support volume 70% — before it was a category.
-              Managed 700+ compute nodes and 400+ AI accelerators across two datacenters.
-              Led platform engineering for 800+ engineers, a Tiger Team of 20+ resolving critical
-              hardware failures, and transitioned the organization from reactive IT to proactive
-              Platform Engineering.
+              Owned vision, strategy, and roadmap for HPC and AI training clusters serving 800+ engineers
+              across 3 globally distributed datacenters. Drove L2&ndash;L4 SRE operations and 24/7 incident
+              response &mdash; 700+ compute nodes and 400+ AI accelerators under management.
+              Introduced bare-metal automation from scratch (MAAS, PXE, Ansible) and led the transition
+              from reactive IT to proactive Platform Engineering. Pioneered Agentic AI that cut support
+              volume 70% &mdash; before it was a category.
             </p>
           </div>
         </div>
@@ -160,42 +328,14 @@
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <div class="timeline-date">2023</div>
-            <h3>DevOps Manager</h3>
-            <div class="timeline-company">Current Lighting</div>
+            <div class="timeline-date">2018 — 2023</div>
+            <h3>DevOps Architect &amp; Data Architect</h3>
+            <div class="timeline-company">Jabil &middot; Spirent &middot; Current Lighting</div>
             <p>
-              Managed DevOps, SRE, and SaaS operations across AWS, Azure, on-prem, edge compute,
-              and IoT. Architected CI/CD pipelines spanning iOS, Android, Linux, and NUC deployments.
-              Maintained and scaled DataStax, Spark, and Cassandra clusters.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2022 — 2023</div>
-            <h3>DevOps Architect / Manager</h3>
-            <div class="timeline-company">Spirent Communications</div>
-            <p>
-              Transformed a distributed team of 8 engineers across the US and overseas.
-              Architected end-to-end CI/CD including multi-cloud and air-gapped deployments.
-              Defined the pipeline roadmap for Kubernetes and legacy VM environments.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2018 — 2022</div>
-            <h3>Data Architect / DevOps Architect</h3>
-            <div class="timeline-company">Jabil</div>
-            <p>
-              Built near real-time analytics pipelines for global factory operations using Kubernetes,
-              Kafka, Elasticsearch, and Ansible. Converted a monolithic test framework to microservices.
-              Led a zero-data-loss platform migration across 8 teams. Saved the business millions
-              through automated reporting and manufacturing metrics.
+              Built near real-time analytics pipelines for global factory operations.
+              Architected CI/CD spanning multi-cloud and air-gapped deployments.
+              Led zero-data-loss platform migrations. Infrastructure at scale,
+              every layer from database to deployment.
             </p>
           </div>
         </div>
@@ -204,205 +344,12 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-date">Earlier</div>
-            <h3>Software & Infrastructure Architect</h3>
+            <h3>Software &amp; Infrastructure Architect</h3>
             <div class="timeline-company">Flex International &middot; HP TippingPoint</div>
-            <p>
-              Software architecture and infrastructure engineering at scale.
-            </p>
+            <p>Software architecture and infrastructure engineering at scale.</p>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Education</div>
-            <h3>B.S. Electrical Engineering</h3>
-            <div class="timeline-company">University of Texas at Dallas</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Work -->
-  <section class="section" id="work">
-    <div class="container">
-      <div class="section-label">What I'm Building Now</div>
-      <h2 class="section-title">AI-first architecture, production systems.</h2>
-      <p class="section-intro">Since leaving Tenstorrent, I've been shipping — applying everything I've learned about systems design, security, and AI to build tools I believe in. Each one started with a real problem and was built with the same rigor I'd bring to enterprise infrastructure.</p>
-
-      <div class="work-grid">
-
-        <div class="work-card work-featured">
-          <div class="work-category">AI Agent Platform</div>
-          <h3>Agent MA</h3>
-          <p>
-            A platform for building AI agent teams that coordinate, learn, and get better
-            over time. Agents talk to each other across users, share context in group
-            conversations, and operate within role-enforced boundaries. Choose your LLM
-            provider — Claude, Gemini, and more — with credentials that heal themselves.
-            Kubernetes-native, mobile-friendly, and self-healing by design.
-          </p>
-          <a href="https://agent.gqma.org" class="btn btn-outline" style="margin-top: 16px;">Learn More &rarr;</a>
-        </div>
-
-        <div class="work-card work-featured">
-          <div class="work-category">Recently Shipped</div>
-          <h3>What's New in Agent MA</h3>
-          <div class="feature-grid">
-            <div class="feature-item">
-              <strong>Multi-LLM Provider Selection</strong>
-              <span>Switch between Claude, Gemini, and more with simple commands. Pick the right model for every task.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Provider Dashboard</strong>
-              <span>Visual provider picker and per-provider usage breakdown — see exactly what you're using and where.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Auto-Credential Recovery</strong>
-              <span>Credentials refresh automatically. No manual re-auth, no expired tokens, no interruptions.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Persistent File Handling</strong>
-              <span>Persistent storage and Google Workspace integration. Your files stay where they belong.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Multi-Account Email</strong>
-              <span>Connect a second email account. Separate work and personal without switching contexts.</span>
-            </div>
-            <div class="feature-item">
-              <strong>MA-to-MA Messaging</strong>
-              <span>Agents talk to each other across users — coordinated intelligence, not isolated chatbots.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Shared Context Ledger</strong>
-              <span>Group chat intelligence. Every agent in a conversation shares context and builds on each other's work.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Self-Healing Infrastructure</strong>
-              <span>Heartbeat v9 — faster credential refresh, no more flapping. Services recover before you notice.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Mobile Dashboard</strong>
-              <span>Full dashboard experience on any device. Manage agents, view usage, configure settings — from your phone.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Invite System</strong>
-              <span>Invite friends and teammates directly through your MA. Growth built into the product.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="work-card work-featured">
-          <div class="work-category">AI + Search &middot; Systems Architecture</div>
-          <h3>Scout</h3>
-          <p>
-            A federated search engine across 25+ marketplaces — designed as a plugin architecture
-            where each provider is an isolated adapter with its own Fernet-encrypted config.
-            AI classifies queries into intent, a 4-layer relevance scoring engine ranks results
-            in real-time via SSE streaming, and Prometheus + OpenTelemetry trace every request
-            from ingestion to render. One query, dozens of sources, full observability.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">ML Inference &middot; Multi-Tenant SaaS</div>
-          <h3>Polymorphic</h3>
-          <p>
-            A multi-tenant ML inference platform with namespace-isolated deployments, HPA-driven
-            GPU scaling, and scoped RBAC. JWT + API key auth, security headers middleware, rate
-            limiting per tenant, S3 model storage, Stripe billing. Users deploy models through a
-            simple API — the security and scaling happen automatically.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">Real-Time Systems</div>
-          <h3>Jam Session</h3>
-          <p>
-            Musicians shouldn't need to be in the same room. A low-latency networked MIDI system
-            in C, speaking raw UDP with RTT measurement, cross-platform between Windows and Linux.
-            Plug in your keyboard, connect to a session, and play together.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">Business Platform &middot; Encrypted by Default</div>
-          <h3>AgentHub</h3>
-          <p>
-            Insurance sales management built on AES-256-GCM document encryption, brute-force
-            protection, and role-based access (admin / manager / seller). Concurrent bulk import
-            via worker pools, Claude-powered PDF and spreadsheet extraction, multi-vendor quote
-            comparison. Every customer document is encrypted at rest — not optional, not configurable.
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-category">AI + Privacy-First Design</div>
-          <h3>Job Hunter</h3>
-          <p>
-            Privacy-first job matching — no credentials stored, no data retained. Claude tailors
-            resumes per role, sentence-transformers score semantic fit, Playwright automates
-            applications. Multi-service architecture with Celery task queues, each service
-            scoped to a single responsibility. Your data stays yours.
-          </p>
-        </div>
-
-      </div>
-
-      <p class="work-more">
-        Plus: SRE infrastructure agents, Rust file-sync CLI, GPU-accelerated background removal,
-        document scanning pipeline, LLM caching proxy, self-hosted Excalidraw, Docker Compose to Helm converter,
-        Ansible playbooks for Dell PowerEdge servers, bare-metal orchestration via MAAS, and more.
-      </p>
-    </div>
-  </section>
-
-  <!-- Approach -->
-  <section class="section section-dark" id="approach">
-    <div class="container">
-      <div class="section-label">Approach</div>
-      <h2 class="section-title">How I work.</h2>
-      <div class="approach-grid">
-        <div class="approach-card">
-          <div class="approach-num">01</div>
-          <h3>AI systems architecture</h3>
-          <p>
-            Every system I build starts with architecture — the right boundaries, the right failure
-            modes, the right agent roles. I've designed platforms spanning 700+ compute nodes
-            across datacenters, and now I architect AI agent systems on bare metal: Kubernetes,
-            Helm, Harbor, Vault, Prometheus. I think in systems, not features.
-          </p>
-        </div>
-        <div class="approach-card">
-          <div class="approach-num">02</div>
-          <h3>Right tool, right job</h3>
-          <p>
-            Rust when correctness and performance matter. Go for concurrent services. Python for
-            rapid iteration and ML. C when you need to talk directly to hardware. TypeScript for
-            rich UIs. I don't have a favorite language — I have favorite outcomes.
-          </p>
-        </div>
-        <div class="approach-card">
-          <div class="approach-num">03</div>
-          <h3>AI agents, not chatbots</h3>
-          <p>
-            At Tenstorrent, I built MCP agents that cut support tickets 70%. Now I'm building
-            coordinated multi-agent teams with layered personas, competency tracking, and role
-            enforcement. AI that operates like a trained team — not a chatbot bolted onto a dashboard.
-          </p>
-        </div>
-        <div class="approach-card">
-          <div class="approach-num">04</div>
-          <h3>Security as architecture</h3>
-          <p>
-            Security isn't a checklist you run at the end — it's how you design the system from day one.
-            Vault for secrets management, certificate-based authentication, encrypted storage at rest,
-            zero-trust networking, automated credential rotation. I've managed infrastructure serving
-            800+ engineers where a breach would halt product development. That shapes how I build everything.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -411,16 +358,16 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="contact-inner">
-        <div class="section-label">Connect</div>
-        <h2 class="section-title">Ready to move faster?</h2>
+        <div class="section-label">Get Started</div>
+        <h2 class="section-title">Ready to deploy your AI workforce?</h2>
         <p class="contact-text">
-          If your organization needs AI architecture, agent systems design, or someone who
-          can build intelligent automation on real infrastructure — I'd like to hear about it.
-          15+ years of hands-on experience from hardware to AI, at companies like Tenstorrent,
-          Jabil, Spirent, and HP. Let's talk.
+          Agent MA is built for organizations that want to run AI agent teams in production —
+          not experiment with chatbots. If you're building with multi-agent systems
+          or want to see what a working AI company looks like, let's talk.
         </p>
         <div class="contact-links">
-          <a href="#" class="btn btn-primary contact-email" id="contact-email" style="display:none;">Get in Touch</a>
+          <a href="https://agent.gqma.org" class="btn btn-primary">Try Agent MA &rarr;</a>
+          <a href="#" class="btn btn-outline contact-email" id="contact-email" style="display:none;">Get in Touch</a>
         </div>
         <noscript>
           <p class="contact-noscript">Enable JavaScript to see contact details.</p>
@@ -433,7 +380,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">GQMA</span>
+        <span class="footer-logo">Agent MA</span>
         <span class="footer-copy">&copy; 2026 gqma.org</span>
       </div>
     </div>

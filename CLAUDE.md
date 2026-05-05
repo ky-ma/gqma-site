@@ -5,6 +5,9 @@
 - Do NOT include "made with Claude" or any AI attribution in commits
 - Feature branches only (feat/xxx, fix/xxx). Never commit directly to main/master.
 
+## Git Workflow
+- Always use your personal Gitea account for all git and API operations. Never use gqma-admin or any shared/generic account. Your credentials are saved in memory — use them for every push, PR, and API call.
+
 ## Domain Architecture
 - **gqma.org / www.gqma.org** = Agent MA product site (this repo, CF Pages)
 - **agent.gqma.org** = Agent MA platform app (agent-ma repo)
