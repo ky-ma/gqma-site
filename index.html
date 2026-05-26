@@ -15,8 +15,9 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Agent MA</a>
+      <a href="#" class="nav-logo">Ky Ma</a>
       <div class="nav-links">
+        <a href="#products">Products</a>
         <a href="#platform">Platform</a>
         <a href="#enterprise">Enterprise</a>
         <a href="#proof">In Production</a>
@@ -36,17 +37,63 @@
     </div>
     <div class="hero-content">
       <h1 class="hero-title">
-        AI Agent Workforce Platform<br>
-        <span class="hero-accent">Not a chatbot. A company.</span>
+        Ky-Anh Ma<br>
+        <span class="hero-accent">AI platform architect.</span>
       </h1>
       <p class="hero-sub">
-        Deploy dev teams, ops teams, and support teams as AI agents.
-        They coordinate, self-heal, and ship real work — orchestrated on
-        production infrastructure you can trust.
+        10+ years across HPC, distributed systems, and applied AI. Currently
+        shipping two products &mdash; Foundry (bare-metal control plane) and
+        Agent MA (multi-agent workforce platform). Both running on my own
+        hardware. The agent team builds the platform; I direct the work.
       </p>
       <div class="hero-cta">
-        <a href="#platform" class="btn btn-primary">See the Platform</a>
+        <a href="#products" class="btn btn-primary">See the Products</a>
         <a href="#proof" class="btn btn-outline">30+ Agents in Production &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section section-dark" id="products">
+    <div class="container">
+      <div class="section-label">Products</div>
+      <h2 class="section-title">Built from the metal up.</h2>
+      <p class="section-intro">Two products, one stack. Foundry runs the hardware. Agent MA runs the agents. Each works alone &mdash; together they take racks of bare metal to a working AI workforce.</p>
+
+      <div class="platform-grid">
+
+        <div class="platform-card platform-card-wide">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="4.5" rx="1"/><rect x="3" y="10" width="18" height="4.5" rx="1"/><rect x="3" y="16" width="18" height="4.5" rx="1"/><circle cx="6.5" cy="6.25" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.25" r="0.5" fill="currentColor"/><circle cx="6.5" cy="18.25" r="0.5" fill="currentColor"/></svg>
+          </div>
+          <h3>Foundry &mdash; Bare-Metal Control Plane</h3>
+          <p>
+            A clean, opinionated control plane for bare-metal infrastructure. Sits on top of MAAS and gives you what you actually want day-to-day &mdash; a real dashboard, machine-type templates, bulk deploys, web terminal, snapshot/rollback, and a programmable REST API.
+          </p>
+          <p>
+            Drives networking (bonds, bridges, VLANs), storage (flat, LVM, bcache, RAID), virtualization (KVM, LXD), Kubernetes (k3s clusters), Ansible post-deploy, RBAC, and real-time fleet state over WebSockets. 52 features shipped. 262 documented API endpoints. Bulk operations up to 20 machines per call.
+          </p>
+          <p>
+            <strong>Stack position:</strong> sits between MAAS (raw provisioning) and Agent MA (agent layer). One hardware-mediation API for the whole stack &mdash; one key, one audit trail, one source of truth.
+          </p>
+        </div>
+
+        <div class="platform-card platform-card-wide">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3>Agent MA &mdash; AI Agent Workforce Platform</h3>
+          <p>
+            Multi-agent platform that deploys whole teams of AI agents &mdash; coordinators, developers, architects, QA, SRE, support. Persistent memory, real-time messaging, self-healing infrastructure, multi-LLM routing with BYOS, enterprise isolation and Vault-managed secrets.
+          </p>
+          <p>
+            30+ agents in production. 20+ systems shipped in three months. Daily production deploys driven by the agent team itself.
+          </p>
+          <p>
+            <strong>Stack position:</strong> the top layer &mdash; built last, sitting on Foundry. Agents reason about what to do; Foundry turns "deploy 4 nodes with this config" into reality on the hardware below.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -291,7 +338,7 @@
     <div class="container">
       <div class="section-label">Who Built This</div>
       <h2 class="section-title">15+ years from bare metal to AI agents.</h2>
-      <p class="section-intro">Agent MA is built by someone who's operated 700+ compute nodes across HPC and AI training clusters, led platform engineering for 800+ engineers, and pioneered agentic AI before it was a category.</p>
+      <p class="section-intro">I've managed teams, operated 700+ compute nodes across HPC and AI training clusters, and pioneered agentic AI before it was a category.</p>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -358,16 +405,16 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="contact-inner">
-        <div class="section-label">Get Started</div>
-        <h2 class="section-title">Ready to deploy your AI workforce?</h2>
+        <div class="section-label">Work With Me</div>
+        <h2 class="section-title">Consulting, full-time, or try the platform.</h2>
         <p class="contact-text">
-          Agent MA is built for organizations that want to run AI agent teams in production —
-          not experiment with chatbots. If you're building with multi-agent systems
-          or want to see what a working AI company looks like, let's talk.
+          Available for consulting on AI platforms, HPC, and bare-metal infrastructure &mdash;
+          and open to the right full-time role. Or, if you just want to see what an agent team
+          running production looks like, try Agent MA directly.
         </p>
         <div class="contact-links">
-          <a href="https://agent.gqma.org" class="btn btn-primary">Try Agent MA &rarr;</a>
-          <a href="#" class="btn btn-outline contact-email" id="contact-email" style="display:none;">Get in Touch</a>
+          <a href="#" class="btn btn-primary contact-email" id="contact-email" style="display:none;">Get in Touch</a>
+          <a href="https://agent.gqma.org" class="btn btn-outline">Try Agent MA &rarr;</a>
         </div>
         <noscript>
           <p class="contact-noscript">Enable JavaScript to see contact details.</p>
@@ -380,7 +427,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">Agent MA</span>
+        <span class="footer-logo">Ky-Anh Ma</span>
         <span class="footer-copy">&copy; 2026 gqma.org</span>
       </div>
     </div>
